@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Pallas/static/css/main.073c9b0a.css",
+    "main.js": "/Pallas/static/js/main.1f025d82.js",
+    "static/js/787.93c85d66.chunk.js": "/Pallas/static/js/787.93c85d66.chunk.js",
+    "static/media/logo.svg": "/Pallas/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Pallas/index.html",
+    "main.073c9b0a.css.map": "/Pallas/static/css/main.073c9b0a.css.map",
+    "main.1f025d82.js.map": "/Pallas/static/js/main.1f025d82.js.map",
+    "787.93c85d66.chunk.js.map": "/Pallas/static/js/787.93c85d66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1f025d82.js"
+  ]
+}
