@@ -23,10 +23,10 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "rm": "rm -rf docs",
-        "mv": "mv build docs",
+        "clean": "if exist docs rmdir /s /q docs",
+        "move": "move build docs",
         "git": "git add . && git commit && git push origin master",
-        "deploy": "npm run rm && npm run build && npm run mv && npm run git"
+        "deploy": "npm run clean && npm run build && npm run move && npm run git"
     },
     "eslintConfig": {
         "extends": [
