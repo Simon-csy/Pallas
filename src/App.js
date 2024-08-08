@@ -17,12 +17,14 @@ const LeftContent = styled('div')(({ theme }) => ({
   flex: 1,
   textAlign: 'right',
   paddingRight: theme.spacing(2),
+  marginTop: theme.spacing(1), // Add margin to the top
 }));
 
 const RightContent = styled('div')(({ theme }) => ({
   flex: 1,
   textAlign: 'left',
   paddingLeft: theme.spacing(2),
+  marginTop: theme.spacing(0.5), // Add margin to the top
 }));
 
 export default function BasicTimeline() {
@@ -33,7 +35,8 @@ export default function BasicTimeline() {
     axios.get('https://www.simonland.me/api/book')
       .then(response => {
         console.log(response.data);
-        setEvents(response.data);
+        const sortedEvents = response.data.sort((a, b) => new Date(b.start) - new Date(a.start));
+        setEvents(sortedEvents);
       })
       .catch(error => {
         console.error('There was an error fetching the data!', error);
